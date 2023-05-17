@@ -1,14 +1,12 @@
 import React from 'react'
-import { Col, Row } from 'antd';
 import Navbar from '../components/Navbar';
+import card from '../components/card';
 
 function Home() {
   return (
 <>
-<Row>
-      <Col span={12}>Logo</Col>
-      <Col span={12}><Navbar/></Col>
-    </Row>
+<Navbar/>
+<card/>
 
 </>
     )

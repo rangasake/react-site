@@ -1,11 +1,11 @@
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
-
+import '../styles/styles.css'
 import { useState } from 'react';
 
 const items = [
   {
-    label: <span style={{color: 'red'}}>Navigation One</span> ,
+    label: <span className='{styles.title}'>Navigation One</span> ,
     key: 'mail',
     icon: <MailOutlined />,
   },
@@ -16,7 +16,7 @@ const items = [
     disabled: true,
   },
   {
-    label: 'Navigation Three',
+    label: <span className='text-xl hover:bg-blue-600 hover:text-white py-1'>Navigation Three</span>,
     key: 'SubMenu',
     icon: <SettingOutlined />,
     children: [
@@ -66,7 +66,7 @@ const App = () => {
     console.log('click ', e);
     setCurrent(e.key);
   };
-  return <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} defaultOpenKeys={["SubMenu"]} />;
+  return <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} defaultOpenKeys={["SubMenu"]} className='text-blue-600' />;
 };
 export default App;
 
