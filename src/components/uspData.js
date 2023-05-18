@@ -15,4 +15,8 @@ export default [
         uspTitle: "24x7 Support",
         uspImg: "https://cdn-icons-png.flaticon.com/128/950/950299.png",
     },
+    {
+        uspTitle: "Tripple Lock Protection",
+        uspImg: "https://cdn-icons-png.flaticon.com/128/4504/4504879.png",
+    },
 ];

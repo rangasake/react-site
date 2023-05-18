@@ -56,8 +56,8 @@ export default function App() {
 </div>
 
 {/* USP section */}
-<div className="max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8 ">
-<div className="mt-2 grid gap-6 lg:grid-cols-2 xl:grid-cols-4">
+<div className="max-w-md sm:max-w-xl lg:max-w-7xl mx-auto px-8 lg:px-12 py-8 ">
+<div className="mt-2 grid gap-6 lg:grid-cols-2 xl:grid-cols-5">
           {uspData.map((Ssp) => (
             <Card Ssp={Ssp} key={Ssp.uspTitle} />
           ))}
