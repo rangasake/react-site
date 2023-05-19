@@ -9,6 +9,7 @@ import HotelDetails from "./components/HotelDetails";
 import HotelData from "./components/HotelData";
 import uspData from "./components/uspData";
 import Card from "./components/uspCards";
+import Form from "./components/searchForm";
 
 export default function App() {
   return (
@@ -50,9 +51,21 @@ export default function App() {
         </div>
       </div> */}
 
-<div className="banner h-[500px] bg-[url('https://images.unsplash.com/photo-1629286521404-77161a73af35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80')] bg-center bg-cover bg-fixed bg-no-repeat text-center">
-<h1 className="max-w-md sm:max-w-xl lg:max-w-6xl ml-20 px-8 pb-2 lg:px-12 pt-[200px] text-5xl text-white">Luxury Holidays Deals and Packages.</h1>
+<div className="banner xs:h-[150px] sm:h-[250px] md:h-[250px] lg:h-[550px] bg-[url('https://images.unsplash.com/photo-1629286521404-77161a73af35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80')] bg-center bg-cover bg-fixed bg-no-repeat text-center">
+<h1 className="max-w-md sm:max-w-xl lg:max-w-6xl ml-20 px-8 pb-2 lg:px-12  pt-[200px] text-5xl text-white">Luxury Holidays Deals and Packages.</h1>
 <p className="text-xl text-white">It matters where you stay. </p>
+<div className="mt-2">
+{/* <label class="relative block">
+  <span className="sr-only">Search</span>
+  <span className="absolute inset-y-0 left-0 flex items-center pl-2 mx-auto">
+  
+  </span>
+  <input className=" bg-transparent placeholder:text-white mx-auto placeholder:italic block bg-white w-80 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search your favourite destination" type="text" name="search"/>
+</label> */}
+<Form/>
+
+</div>
+
 </div>
 
 {/* USP section */}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { EnvironmentOutlined, ArrowRightOutlined  } from '@ant-design/icons';
-import { Carousel } from 'antd';
+import { Carousel, Col, Row } from 'antd';
 
 
 export default function HotelDetails( { HotelData }) {
@@ -16,21 +16,30 @@ export default function HotelDetails( { HotelData }) {
       };
   return (
     
+    <Row
+    gutter={{
+      xs: 8,
+      sm: 16,
+      md: 24,
+      lg: 32,
+    }}
+  >
+          <Col className="gutter-row" span={24}>
 
-<div className="">
+<div className="hover:bg-sky-500 hover:ring-sky-500 hover:text-white hover:rounded-[10px] ">
 <Carousel autoplay>
-    <div className='shadow-lg'>
-      <h3 style={contentStyle}><img  src={HotelData.Hotelimg1}/></h3>
+    <div className='shadow-lg '>
+      <h3 style={contentStyle}><img className='h-[100%] w-[100%]' src={HotelData.Hotelimg1}/></h3>
     </div>
     <div className='shadow-lg'>
-      <h3 style={contentStyle}> <img src={HotelData.Hotelimg2}/> </h3>
+      <h3 style={contentStyle}> <img className='h-[100%] w-[100%]' src={HotelData.Hotelimg2}/> </h3>
     </div>
     <div className='shadow-lg'>
-      <h3 style={contentStyle}><img src={HotelData.Hotelimg3}/></h3>
+      <h3 style={contentStyle}><img className='h-[100%] w-[100%]' src={HotelData.Hotelimg3}/></h3>
     </div>
     
   </Carousel>
-  <div className='border-2 border-gray border-t-0 px-2 pt-4 pb-3 rounded '>
+  <div className='border-2 border-gray border-t-0 px-2 pt-4 pb-3 rounded  hover:border-0 '>
               <h3 className="text-2xl mb-2">{HotelData.HoteName}</h3>
               <div>
                 <ul>
@@ -71,6 +80,8 @@ export default function HotelDetails( { HotelData }) {
               </div>
             </div>
             </div>
+            </Col>
+            </Row>
 
 
   );

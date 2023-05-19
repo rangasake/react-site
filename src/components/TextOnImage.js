@@ -6,8 +6,8 @@ export default function TextOnImage({ Toi }) {
         <div className='mb-[10px]'>
         <a
   href="#"
-  className="image relative block overflow-hidden rounded-xl shadow-lg bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${Toi.imageUrl})` }}>
-  <div className="absolute inset-0 bg-black/25"></div>
+  className="image relative block overflow-hidden rounded-xl shadow-md hover:shadow-xl bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${Toi.imageUrl})` }}>
+  <div className="absolute inset-0 bg-black/25 hover:bg-gray"></div>
 
   <div className="relative flex items-start justify-between p-4 sm:p-6 lg:p-8">
     <div className="sm:pt-18 pt-12 text-white lg:pt-24">
