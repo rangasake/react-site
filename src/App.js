@@ -13,6 +13,7 @@ import Form from "./components/searchForm";
 
 export default function App() {
   return (
+<<<<<<< Updated upstream
     <div>
 
       {/* <div className="bg-gray-100 grid  lg:grid-cols-2 2xl:grid-cols-5"  >
@@ -55,11 +56,19 @@ export default function App() {
 <h1 className="max-w-md sm:max-w-xl lg:max-w-6xl ml-20 px-8 pb-2 lg:px-12  pt-[200px] text-5xl text-white">Luxury Holidays Destinations</h1>
 <p className="text-xl text-white">It Matters Where You Stay. </p>
 <div className="mt-2">
+=======
+    <>
+      <div className="xs:min-h-[50px] sm:min-h-[250px] md:min-h-[450px] lg:min-h-[550px]  justify-center items-center ">
+<div className="banner lg:min-h-[550px]  bg-[url('https://images.unsplash.com/photo-1629286521404-77161a73af35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80')] bg-center bg-cover  bg-no-repeat">
+  <div className="my-auto">
+<h1 className="max-w-md sm:max-w-xl lg:max-w-6xl sm:text-lg md:text-2xl lg:text-5xl text-white ">Luxury Holidays Destinations</h1>
+<p className="text-xl text-white">It Matters Where You Stay! </p>
+<div className="mt-2 pb-10">
+>>>>>>> Stashed changes
 <Form/>
-
 </div>
-
 </div>
+</div></div>
 
 {/* USP section */}
 <div className="max-w-md sm:max-w-xl lg:max-w-7xl mx-auto px-8 lg:px-12 py-8 ">
@@ -117,6 +126,6 @@ export default function App() {
           
         </div>
 
-    </div>
+    </>
   );
 }
