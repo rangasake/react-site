@@ -13,15 +13,15 @@ import Form from "./components/searchForm";
 
 export default function App() {
   return (
-    <div>
-<div className="banner xs:h-[150px] sm:h-[250px] md:h-[250px] lg:h-[550px] bg-[url('https://images.unsplash.com/photo-1629286521404-77161a73af35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80')] bg-center bg-cover bg-fixed bg-no-repeat text-center">
-<h1 className="max-w-md sm:max-w-xl lg:max-w-6xl ml-20 px-8 pb-2 lg:px-12  pt-[200px] text-5xl text-white">Luxury Holidays Destinations</h1>
-<p className="text-xl text-white">It Matters Where You Stay! </p>
-<div className="mt-2">
+    <>
+<div className="banner  xs:h-[150px] sm:h-[250px] md:h-[250px] lg:h-[550px] bg-[url('https://images.unsplash.com/photo-1629286521404-77161a73af35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80')] bg-center bg-cover bg-no-repeat ">
+  <div className="Hero max-w-md sm:max-w-xl lg:max-w-6xl mx-auto flex flex-col h-full justify-center items-center">
+<h1 className="text-5xl text-white py-[1%] ">Luxury Holidays Destinations</h1>
+<p className="text-xl text-white py-[0.5%]">It Matters Where You Stay! </p>
+<div className="">
 <Form/>
-
 </div>
-
+</div>
 </div>
 
 {/* USP section */}
@@ -80,6 +80,6 @@ export default function App() {
           
         </div>
 
-    </div>
+    </>
   );
 }
