@@ -13,6 +13,7 @@ import Form from "./components/searchForm";
 
 export default function App() {
   return (
+   
     <div>
 
       {/* <div className="bg-gray-100 grid  lg:grid-cols-2 2xl:grid-cols-5"  >
