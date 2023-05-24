@@ -1,6 +1,6 @@
 import React from "react";
-
 import { Carousel } from 'antd';
+
 const contentStyle = {
   height: '200px',
   color: '#fff',
@@ -8,6 +8,7 @@ const contentStyle = {
   textAlign: 'center',
   background: '#364d79',
 };
+
 const Card = ( {HotelData} ) => (
   <Carousel autoplay>
     <div>
