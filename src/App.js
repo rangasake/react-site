@@ -1,10 +1,11 @@
 import React from "react";
 
+import './App.css';
 import popularDestinations from "./components/popularDestinations";
 import DestinationCard from "./components/DestinationCard";
 import TextOnImage from "./components/TextOnImage";
 import ToiData from "./components/ToiData";
-// import Card from "./components/carouselCard";
+import CarouselCard from "./components/CarouselCard";
 import HotelDetails from "./components/HotelDetails";
 import HotelData from "./components/HotelData";
 import uspData from "./components/uspData";
@@ -13,16 +14,18 @@ import Card from "./components/uspCards";
 import MultCardCarousel from "./components/MultCardCarousel";
 // import CarouselDeatils from "./components/CarouselDeatils";
 import { ArrowRightOutlined  } from '@ant-design/icons';
+import Tab from "./components/tab";
+// import Navbar from "./components/NewNavBar";
 
 
 export default function App() {
   return (
     <>
-      
+      {/* <Navbar/> */}
 <nav class="bg-white border-gray-200 ">
   <div class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="#" class="flex items-center">
-        <img src="https://media.umbraco.io/telehotelholidays/5red1mpj/layer-98.png" class="h-100 ml-[-50px]" alt="Logo" />
+        <img src="https://media.umbraco.io/telehotelholidays/5red1mpj/layer-98.png" class="h-12 ml-[-50px]" alt="Logo" />
     </a>
     <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
       <span class="sr-only">Open main menu</span>
@@ -54,11 +57,13 @@ export default function App() {
     </div>
   </div>
 </nav>
+
 <div className="banner  xs:h-[150px] sm:h-[250px] md:h-[250px] lg:h-[500px] bg-[url('https://images.pexels.com/photos/3320518/pexels-photo-3320518.jpeg')] bg-center bg-cover bg-no-repeat justify-start items-center flex ">
+  
   <div className="Hero max-w-md sm:max-w-xl lg:max-w-7xl ml-32 flex flex-col h-48 py-2 px-10 mt-6 justify-center items-start bg-sky-950 rounded overflow-hidden shadow">
 <h1 className="text-5xl text-white py-2 ">Luxury Holidays Destinations</h1>
 <p className="text-xl text-white py-[0.5%]">It matters where you stay! </p>
-<button class=" text-white mt-4">Explore <ArrowRightOutlined/></button>
+<button class=" text-white mt-4"><a href="#destinations">Explore</a> <ArrowRightOutlined className="mt-1"/></button>
 <div className="">
 {/* <Form/> */}
 
@@ -67,7 +72,7 @@ export default function App() {
 </div>
 
 {/* USP section */}
-<div className="max-w-md sm:max-w-xl lg:max-w-7xl mx-auto px-8 lg:px-12 py-8 ">
+<div className="max-w-md sm:max-w-xl lg:max-w-7xl mx-auto px-8 lg:px-12 py-6 ">
 <div className="mt-2 grid gap-6 lg:grid-cols-2 xl:grid-cols-5">
           {uspData.map((Ssp) => (
             <Card Ssp={Ssp} key={Ssp.uspTitle} />
@@ -87,9 +92,11 @@ export default function App() {
       </div>
 
       <div className="max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8">
-      <h2 className="text-2xl text-gray-900">Trending destinations</h2>
+      <h2 className="text-2xl text-gray-900">Inspiring culture around the world</h2>
         <p className="mt-2 text-gray-600">A selection of great work-friendly cities with lots to see and explore.</p>
-      <div className="mt-6 grid gap-4 lg:grid-cols-2 xl:grid-cols-3">
+
+
+      <div className="mt-6 grid gap-4 lg:grid-cols-2 xl:grid-cols-4">
           {ToiData.map((Toi) => (
             <TextOnImage Toi={Toi} key={Toi.country} />
           ))}
@@ -131,6 +138,16 @@ export default function App() {
           <MultCardCarousel/>
             </div>
             </div>
+
+
+            <div className=" max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8" id="pack">
+            <h2 className="text-2xl text-gray-900">Top cultural sights you can't miss</h2>
+        <p className="mt-2 mb-6 text-gray-600">A selection of great work-friendly cities with lots to see and explore.</p>
+<CarouselCard/>
+</div>
+        <div className=" max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8">
+          <Tab/>
+        </div>
 
     </>
   );

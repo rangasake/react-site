@@ -1,11 +1,11 @@
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
-import '../styles/styles.css'
+import '../styles/styles.css';
 import { useState } from 'react';
 
 const items = [
   {
-    label: <span className='{styles.title}'>Navigation One</span> ,
+    label: <span className='{styles.title}'>Holidays</span> ,
     key: 'mail',
     icon: <MailOutlined />,
   },
@@ -60,7 +60,7 @@ const items = [
   },
 ];
 
-const App = () => {
+const NavBar = () => {
   const [current, setCurrent] = useState('mail');
   const onClick = (e) => {
     console.log('click ', e);
@@ -68,6 +68,6 @@ const App = () => {
   };
   return <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} defaultOpenKeys={["SubMenu"]} className='text-blue-600' />;
 };
-export default App;
+export default NavBar;
 
 

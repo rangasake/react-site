@@ -1,26 +1,48 @@
 import React from "react";
-import { Carousel } from 'antd';
 
-const contentStyle = {
-  height: '200px',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
-};
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import Card from "../components/ranga";
+import CardData from "../components/CardData";
 
-const Card = ( {HotelData} ) => (
-  <Carousel autoplay>
-    <div>
-      <h3 style={contentStyle}><img  src={HotelData.Hotelimg1}/></h3>
-    </div>
-    <div>
-      <h3 style={contentStyle}> <img src={HotelData.Hotelimg2}/> </h3>
-    </div>
-    <div>
-      <h3 style={contentStyle}><img src={HotelData.Hotelimg2}/></h3>
-    </div>
-    
-  </Carousel>
-);
-export default Card;
+
+export default function CarouselCard () {
+  
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+
+  
+
+
+const Ranga = CardData.map((CardData) => <Card
+ country={CardData.country} 
+ destination={CardData.destination} 
+ rating={CardData.rating} 
+ imageUrl={CardData.imageUrl} 
+ /> );
+
+  return (
+<Carousel responsive={responsive}>
+  {Ranga}
+</Carousel>
+
+  );
+
+}
