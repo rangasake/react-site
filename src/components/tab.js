@@ -1,25 +1,42 @@
 import React from 'react'
 
 import { Tabs } from 'antd';
-const onChange = (key) => {
-  console.log(key);
-};
-const items = [
-  {
-    key: '1',
-    label: `Tab 1`,
-    children: `Content of Tab Pane 1    `,
-  },
-  {
-    key: '2',
-    label: `Tab 2`,
-    children: `Content of Tab Pane 2`,
-  },
-  {
-    key: '3',
-    label: `Tab 3`,
-    children: `Content of Tab Pane 3`,
-  },
-];
-const Tab = () => <Tabs defaultActiveKey="1" items={items} onChange={onChange} />;
-export default Tab;
+import popularDestinations from "../components/popularDestinations";
+import DestinationCard from "../components/DestinationCard";
+import CarouselCard from "../components/CarouselCard";
+
+
+export default function Tab (){
+
+    return (
+
+<Tabs defaultActiveKey='tab2'>
+    <Tabs.TabPane tab="Top Countries to Visit" key="tab1">
+        <div>
+        <div className="">
+        <CarouselCard/>
+        </div>
+        </div>
+    </Tabs.TabPane>
+
+    <Tabs.TabPane tab={ 
+        <div className='text-lg'>
+            Top Destination
+        </div>
+    } key="tab2">
+        <div>      
+        <div className="mt-6 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
+          {popularDestinations.map((dest) => (
+            <DestinationCard dest={dest} key={dest.city} />
+          ))}
+        </div>
+            
+             </div>
+    </Tabs.TabPane>
+
+    
+</Tabs>
+
+
+    );
+}

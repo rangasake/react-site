@@ -35,8 +35,12 @@ marginRight: '10px',
 };
 
 const cardCover = {
-  overflow: "hidden", height: "200px"
+  overflow: "hidden", height: "100%",
 };
+
+const MetaStyle ={
+  paddingTop: "0px",
+}
 
   return (
     <Carousel 
@@ -71,13 +75,19 @@ const cardCover = {
     </div>
      }
   >
-    <Meta style={{ fontSize: '15px', color: 'black'}} title="San Diego" description={[
-         <div className=''>
-          <Space>
-             <p>Package holidays to San Diego</p>
-             <p style={{ color: 'black', fontSize: '15px', }}>$234 PP</p>
-             </Space>
-             <p className='mt-2' style={{ color: 'black', fontSize: '14px', }} >View deal <ArrowRightOutlined /> </p>
+    <Meta style={MetaStyle}
+    title={[
+      <div className='justify-items-stretch mt-10'>
+        <p className='justify-self-end inline-block rounded bg-sky-500 p-1 text-white mt-14'> $249 PP </p>
+        <h2 className='justify-self-start'>San Diego</h2>
+      </div>
+    ]}
+    
+    description={[
+         <div className='py-1'>
+                       <p className='text-xs'>Package holidays to San Diego</p>
+                       <p className='justify-self-end inline-block rounded bg-sky-500 p-1 text-white mt-14'> $249 PP </p>
+             <p className='mt-1' style={{ color: 'black', fontSize: '14px', }} >View deal <ArrowRightOutlined /> </p>
           </div>
         ]}/> 
   </Card>

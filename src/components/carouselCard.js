@@ -39,7 +39,18 @@ const Ranga = CardData.map((CardData) => <Card
  /> );
 
   return (
-<Carousel responsive={responsive}>
+<Carousel responsive={responsive} 
+swipeable={true}
+draggable={true}
+showDots={false}
+centerMode={false}
+ssr={true} // means to render carousel on server-side.
+infinite={true}
+autoPlay={true}
+autoPlaySpeed={3000}
+keyBoardControl={true}
+transitionDuration={500}
+>
   {Ranga}
 </Carousel>
 
