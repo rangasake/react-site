@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
 import { Card, Space } from 'antd';
 import { ArrowRightOutlined  } from '@ant-design/icons';
 
@@ -78,15 +79,14 @@ const MetaStyle ={
     <Meta style={MetaStyle}
     title={[
       <div className='justify-items-stretch mt-10'>
-        <p className='justify-self-end inline-block rounded bg-sky-500 p-1 text-white mt-14'> $249 PP </p>
         <h2 className='justify-self-start'>San Diego</h2>
       </div>
     ]}
     
     description={[
-         <div className='py-1'>
+         <div className='py-1 relative'>
                        <p className='text-xs'>Package holidays to San Diego</p>
-                       <p className='justify-self-end inline-block rounded bg-sky-500 p-1 text-white mt-14'> $249 PP </p>
+                       <p className='justify-self-end inline-block rounded bg-sky-500 p-1 text-white'> $249 PP </p>
              <p className='mt-1' style={{ color: 'black', fontSize: '14px', }} >View deal <ArrowRightOutlined /> </p>
           </div>
         ]}/> 
