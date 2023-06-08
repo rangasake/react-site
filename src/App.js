@@ -25,7 +25,7 @@ export default function App() {
   return (
     <>
       {/* <Navbar/> */}
-<nav class=" bg-transparent border-gray-200 container ">
+<nav class=" bg-transparent border-gray-200 container header ">
   <div class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-2 md:p-4">
     <a href="#" class="flex items-center">
         <img src="https://media.umbraco.io/telehotelholidays/5red1mpj/layer-98.png" class="h-8 md:h-10 " alt="Logo" />
