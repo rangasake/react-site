@@ -27,7 +27,15 @@ export default function HotelDetails( { HotelData }) {
           <Col className="gutter-row" span={24}>
 
 <div className="hover:bg-sky-500 hover:ring-sky-500 hover:text-white hover:rounded-[10px] ">
+<<<<<<< HEAD
 <Carousel autoplay>
+=======
+<p className='justify-self-end inline-block rounded p-1 text-white  ribbon'> <span className='text-xl'>$249 PP</span> </p>
+
+<Carousel autoplay
+  removeArrowOnDeviceType={["tablet", "mobile"]}
+>
+>>>>>>> main
     <div className='shadow-lg '>
       <h3 style={contentStyle}><img className='h-[100%] w-[100%]' src={HotelData.Hotelimg1}/></h3>
     </div>
