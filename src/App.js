@@ -1,25 +1,18 @@
 import React from "react";
 
-<<<<<<< HEAD
-=======
 import './App.css';
 import './styles/styles.css';
->>>>>>> main
 import popularDestinations from "./components/popularDestinations";
 import DestinationCard from "./components/DestinationCard";
 import TextOnImage from "./components/TextOnImage";
 import ToiData from "./components/ToiData";
-<<<<<<< HEAD
 // import Card from "./components/carouselCard";
-=======
 import CarouselCard from "./components/CarouselCard";
->>>>>>> main
 import HotelDetails from "./components/HotelDetails";
 import HotelData from "./components/HotelData";
 import uspData from "./components/uspData";
 import Card from "./components/uspCards";
 import Form from "./components/searchForm";
-<<<<<<< HEAD
 
 export default function App() {
   return (
@@ -81,7 +74,6 @@ export default function App() {
 {/* USP section */}
 <div className="max-w-md sm:max-w-xl lg:max-w-7xl mx-auto px-8 lg:px-12 py-8 ">
 <div className="mt-2 grid gap-6 lg:grid-cols-2 xl:grid-cols-5">
-=======
 import MultCardCarousel from "./components/MultCardCarousel";
 // import CarouselDeatils from "./components/CarouselDeatils";
 import { ArrowRightOutlined  } from '@ant-design/icons';
@@ -152,18 +144,13 @@ export default function App() {
 {/* USP section */}
 <div className="max-w-md sm:max-w-xl lg:max-w-7xl mx-auto px-8 lg:px-12 md:py-6  py-2">
 <div className="mt-1 md:mt-2 grid gap-3 md:gap-6 grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-5">
->>>>>>> main
           {uspData.map((Ssp) => (
             <Card Ssp={Ssp} key={Ssp.uspTitle} />
           ))}
         </div>
         </div>
 
-<<<<<<< HEAD
       <div className="max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8">
-=======
-      <div className="max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8" id="destinations">
->>>>>>> main
 
         <h2 className="text-2xl text-gray-900">Popular destinations</h2>
         <p className="mt-2 text-gray-600">A selection of great work-friendly cities with lots to see and explore.</p>
@@ -175,28 +162,16 @@ export default function App() {
       </div>
 
       <div className="max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8">
-<<<<<<< HEAD
       <h2 className="text-2xl text-gray-900">Trending destinations</h2>
         <p className="mt-2 text-gray-600">A selection of great work-friendly cities with lots to see and explore.</p>
       <div className="mt-6 grid gap-4 lg:grid-cols-2 xl:grid-cols-3">
-=======
-      <h2 className="text-2xl text-gray-900">Inspiring culture around the world</h2>
-        <p className="mt-2 text-gray-600">A selection of great work-friendly cities with lots to see and explore.</p>
-
-
-      <div className="mt-6 grid gap-4 grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
->>>>>>> main
           {ToiData.map((Toi) => (
             <TextOnImage Toi={Toi} key={Toi.country} />
           ))}
         </div>
         </div>
 
-<<<<<<< HEAD
         <div className="max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8">
-=======
-        <div className="max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8" id="hotels">
->>>>>>> main
         <h2 className="text-2xl text-gray-900">Top Hotel Stays</h2>
         <p className="mt-2 text-gray-600">A selection of great work-friendly cities with lots to see and explore.</p>
 
@@ -221,36 +196,5 @@ export default function App() {
           </div>
           
         </div>
-<<<<<<< HEAD
-
-=======
-        <div className="max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8" id="deals">
-          <h2 className="text-2xl text-gray-900">Top Holidays Packages</h2>
-        <p className="mt-2 text-gray-600">A selection of great work-friendly cities with lots to see and explore.</p>
-          <div className=" mt-6">
-            {/* {CarouselDeatils.map((CarouselDeatils) => (
-            <MultCardCarousel CarouselDeatils={CarouselDeatils} key={CarouselDeatils.Title} />
-          ))} */}
-          <MultCardCarousel/>
-            </div>
-            </div>
-
-
-            <div className=" max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8" id="pack">
-            <h2 className="text-2xl text-gray-900">Top cultural sights you can't miss</h2>
-        <p className="mt-2 mb-6 text-gray-600">A selection of great work-friendly cities with lots to see and explore.</p>
-<CarouselCard/>
-</div>
-        <div className=" max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8">
-          <Tab/>
-        </div>
-<div className="m-14">
-
-<Image/>
-
-
-</div>
-    </>
->>>>>>> main
   );
 }
