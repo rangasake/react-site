@@ -6,7 +6,7 @@ import popularDestinations from "./components/popularDestinations";
 import DestinationCard from "./components/DestinationCard";
 import TextOnImage from "./components/TextOnImage";
 import ToiData from "./components/ToiData";
-import CarouselCard from "./components/CarouselCard";
+import CarouselCard from "./components/carouselCard";
 import HotelDetails from "./components/HotelDetails";
 import HotelData from "./components/HotelData";
 import uspData from "./components/uspData";

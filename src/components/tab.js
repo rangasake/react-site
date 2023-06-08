@@ -3,7 +3,7 @@ import React from 'react'
 import { Tabs } from 'antd';
 import popularDestinations from "../components/popularDestinations";
 import DestinationCard from "../components/DestinationCard";
-import CarouselCard from "../components/CarouselCard";
+import CarouselCard from "../components/carouselCard";
 
 
 export default function Tab (){
