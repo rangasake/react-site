@@ -64,18 +64,17 @@ const suffix = (
 const Form = () => (
   <AutoComplete
     popupClassName="certain-category-search-dropdown"
-    dropdownMatchSelectWidth={250}
+    dropdownMatchSelectWidth={230}
     style={{
-      width: 300,
+      width: 230,
 
     }}
     options={options}
   >
 <Search
 style={{ backgroundColor: '#00A5E9',}}
-      placeholder="Search your destination"
-      enterButton="Submit"
-      size="large"
+      placeholder="Search your destination..."
+      size="small"
       suffix={suffix}
       onSearch={onSearch}
     />
