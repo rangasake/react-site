@@ -72,7 +72,7 @@ const Form = () => (
     options={options}
   >
 <Search
-style={{ backgroundColor: '#00A5E9',}}
+style={{ }}
       placeholder="Search your destination..."
       size="small"
       suffix={suffix}

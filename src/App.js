@@ -25,10 +25,10 @@ export default function App() {
   return (
     <>
       {/* <Navbar/> */}
-<nav class=" bg-transparent border-gray-200 container ">
+<nav class=" bg-transparent shadow-inner border-gray-200 container ">
   <div class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-2 md:p-4">
     <a href="#" class="flex items-center">
-        <img src="https://media.umbraco.io/telehotelholidays/5red1mpj/layer-98.png" class="h-8 md:h-10 " alt="Logo" />
+        <img src="https://media.umbraco.io/telehotelholidays/5red1mpj/layer-98.png" class="h-8 md:h-10  ml-4" alt="Logo" />
     </a>
     <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
       <span class="sr-only">Open main menu</span>
@@ -64,11 +64,11 @@ export default function App() {
   </div>
 </nav>
 
-<div className="banner mt-[-100px] h-[200px] sm:h-[250px] md:h-[250px] lg:h-[580px] bg-[url('https://images.pexels.com/photos/12858513/pexels-photo-12858513.jpeg')] bg-center bg-cover bg-no-repeat justify-start items-center flex">
+<div className="banner  mt-[-100px] h-[280px] sm:h-[250px] md:h-[250px] lg:h-[580px] bg-[url('https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg')] bg-center bg-cover bg-no-repeat justify-start items-center flex">
 
 {/* <div className="form max-w-sm md:max-w-xl lg:max-w-7xl container">
 </div> */}
-  <div className="Hero max-w-sm sm:max-w-xl lg:max-w-7xl md:ml-32 ml-4 flex flex-col md:h-48 py-2 md:py-2 md:px-10 px-5 md:mt-12 mt-1 justify-center items-start bg-sky-950 rounded overflow-hidden shadow">
+  <div className="Hero max-w-sm sm:max-w-xl lg:max-w-7xl md:ml-32 ml-4 flex flex-col md:h-48 py-2 md:py-2 md:px-10 px-5 md:mt-24 mt-16 justify-center items-start bg-sky-950 rounded overflow-hidden shadow">
 <h1 className=" text:lg md:text-5xl text-white py-2 ">Luxury Holidays Destinations</h1>
 <p className=" text-sm md:text-xl text-white py-[0.5%]">It matters where you stay! </p>
 <button class=" text-white mt-1 text-xs md:text-sm md:mt-4"><a href="#destinations">Explore</a> <ArrowRightOutlined className="mt-1"/></button>
